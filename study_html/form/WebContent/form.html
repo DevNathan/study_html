@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+
+   <form name="joinForm">
+      <p>
+         아이디 <input type="text" placeholder="아이디를 입력해주세요." name="userId" required autocomplete="none">
+      </p>
+      <p>
+         비밀번호 <input type="password" placeholder="15자 이상, 대문자, 특수문자 포함" name="userPassword" required>
+      </p>
+      
+      <fieldset>
+         <legend>성별</legend>
+         <p>
+         <!-- label 태그는 해당 항목 외에 우리가 원하는 것을 클릭해도 반영될 수 있게 해준다. -->
+            <label><input type="radio" name="gender" value="선택안함"> 선택안함</label>
+            <label><input type="radio" name="gender" value="여"> 여자</label>
+            <label><input type="radio" name="gender" value="남"> 남자</label>
+         </p>
+      </fieldset>
+      
+      <fieldset>
+         <legend>취미</legend>
+         <p>
+            <label><input type="checkbox" name="hobby" value="영화감상"> 영화감상</label>
+            <label><input type="checkbox" name="hobby" value="골프"> 골프</label>
+            <label><input type="checkbox" name="hobby" value="볼링"> 볼링</label>
+            <label><input type="checkbox" name="hobby" value="기타"> 기타</label>
+            <label><input type="checkbox" name="hobby" value="테니스"> 테니스</label>
+            <label><input type="checkbox" name="hobby" value="산책"> 산책</label>
+            <label><input type="checkbox" name="hobby" value="연애"> 연애</label>
+            <label><input type="checkbox" name="hobby" value="게임"> 게임</label>
+            <label><input type="checkbox" name="hobby" value="등산"> 등산</label>
+            <label><input type="checkbox" name="hobby" value="축구"> 축구</label>
+            <label><input type="checkbox" name="hobby" value="노래"> 노래</label>
+         </p>
+      </fieldset>
+      <p>
+         색상 <input type="color">
+      </p>
+      <p>
+         이메일 <input type="email" style="width: 50px;">
+      </p>
+      <p>
+         웹 사이트 <input type="url">
+      </p>
+      <p>
+         연락처 <input type="tel">
+      </p>
+      <p>
+         날짜 <input type="datetime-local"><br>
+         날짜 <input type="date">
+      </p>
+      <p>
+         참여 인원 <input type="number" value="1" min="0" max="100" step="5">
+      </p>
+      <p>
+         단계(상, 중, 하) <input type="range" value="1" min="1" max="3">
+      </p>
+      
+      <p>
+         학과 선택
+         <select name="major">
+            <option value="computer">컴퓨터공학과</option>
+            <option value="model">모델학과</option>
+            <option value="nurse">간호학과</option>
+            <option value="music">실용음악과</option>
+            <option value="mechanic">기계공학과</option>
+            <option value="messcom">신문방송학과</option>
+            <option value="management">경영학과</option>
+         </select>
+      </p>
+      
+      <textarea rows="4" cols="50" style="resize: none;">안녕하세요, 반갑습니다.</textarea>
+      
+      <p>
+         <label for="img">
+            <img style="cursor:pointer;" src="subscribe.png">
+         </label>
+         <input type="file" name="img" id="img" style="display: none;">
+      </p>
+      
+      <p>
+         <input type="submit" value="가입 완료">
+         <input type="button" value="버튼">
+         <input type="reset" value="초기화">
+      </p>
+   </form>
+</body>
+</html>

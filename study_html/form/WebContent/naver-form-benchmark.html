@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>네이버 벤치마킹</title>
+</head>
+<body>
+	<div>
+		<h1>
+			<a href="https://naver.com" style="text-decoration: none">NAVER</a>
+		</h1>
+		<form name="joinForm">
+			<div>
+				<p>
+					<input type="text" placeholder="아이디" name="userId" required
+						autocomplete="none">
+				</p>
+				<p>
+					<input type="password" placeholder="비밀번호" name="userPassword"
+						required>
+				</p>
+				<p>
+					<input type="email" placeholder="[선택] 비밀번호 분실 시 확인용 이메일"
+						name="additionalEmail">
+				</p>
+			</div>
+			<div>
+				<p>
+					<input type="text" placeholder="이름" name="userName" required>
+				</p>
+				<p>
+					<input type="text" placeholder="생년월일 8자리" name="userBirthdate"
+						required>
+				</p>
+				<p>
+					<button>통신사 선택</button>
+				</p>
+				<div>
+					<table>
+						<tr>
+							<td><label><input type="radio" name="telecom"
+									value="SKT">SKT</label></td>
+							<td><label><input type="radio" name="telecom"
+									value="SKTA">SKT 알뜰폰</label></td>
+						</tr>
+						<tr>
+							<td><label><input type="radio" name="telecom"
+									value="KT">KT</label></td>
+							<td><label><input type="radio" name="telecom"
+									value="KTA">KT 알뜰폰</label></td>
+						</tr>
+						<tr>
+							<td><label><input type="radio" name="telecom"
+									value="LG">LG U+</label></td>
+							<td><label><input type="radio" name="telecom"
+									value="LGA">LG U+ 알뜰폰</label></td>
+						</tr>
+					</table>
+				</div>
+				<div>
+					<div>
+						<label><input type="radio" name="gender" value="여">
+							여자</label> <label><input type="radio" name="gender" value="남">
+							남자</label>
+					</div>
+					<div>
+						<label><input type="radio" name="nationality" value="내국인">내국인</label>
+						<label><input type="radio" name="nationality" value="외국인">외국인</label>
+					</div>
+				</div>
+				<p>
+					<input type="text" placeholder="휴대전화번호" name="phoneNumber" required>
+				</p>
+				<label><input type="radio" name="agreement" value="agree">[필수]
+					인증 약관 전체동의</label>
+			</div>
+			<button>인증요청</button>
+		</form>
+	</div>
+</body>
+</html>
